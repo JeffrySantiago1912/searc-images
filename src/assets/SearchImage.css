@@ -1,0 +1,110 @@
+/* SearchImage.css
+By: Jeffry Santiago
+Email: engineer_santiago1912@hotmail.com */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Header Styles Animation*/
+.headerStyles {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #4ff1f7, #ffffff);
+    padding: 22px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    position: relative;
+    animation: animateGradient 5s infinite linear;
+    background-size: 200% 100%;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+header input {
+    outline: none;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 10px 5px;
+    border-radius: 4px;
+}
+
+.img-fixed-size {
+    height: 267px;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.center {
+    column-count: 1;
+    column-gap: 20px;
+    max-width: 1000px;
+}
+
+@media (min-width: 600px) {
+    .center {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .center {
+        column-count: 3;
+    }
+}
+
+/* Article */
+article {
+    display: inline-block;
+    width: 100%;
+    transition: box-shadow 0.2s ease;
+    margin: 20px 10px 20px 10px;
+    background: linear-gradient(90deg, #4ff1f7, #fff);
+    animation: animateGradient 5s infinite linear;
+    background-size: 200% 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    break-inside: avoid;
+}
+
+article>img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+article>p {
+    margin: 10px 15px;
+}
+
+article:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Custom btn SweetAlert*/
+.custom-confirm-button {
+    background: linear-gradient(135deg, #3085d6, #00c3ff) !important;
+}
