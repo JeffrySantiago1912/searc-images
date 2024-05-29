@@ -12,3 +12,10 @@ To build it locally install the following dependencies:
 3 - npm i formik
 
 Once the necessary dependencies are installed, build the project using "yarn dev".
+
+On Pc:
+![image](https://github.com/JeffrySantiago1912/searc-images/assets/66681577/34543928-4c8b-46a2-b115-c238c17de479)
+
+On Movil:
+
+![image](https://github.com/JeffrySantiago1912/searc-images/assets/66681577/45847136-0ab8-41c2-a286-0a15ab4162bc)
